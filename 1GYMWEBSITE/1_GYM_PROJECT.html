@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYM WEBSITE</title>
+    <link rel="stylesheet" href="CSS/STYLE.css" />
+    <style>
+      /* best  way put back ground image */
+      header::before {
+        background: url("1_GYM_PROJECT_IMG/BG.jpg") no-repeat center
+          center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      /* body{ badpractice for insereting image 
+        padding: 0px;
+        margin: 0px;
+        background: url("1_GYM_PROJECT_IMG/BG.jpg") no-repeat center
+          center/cover;
+      } */
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        color: aqua;
+        font-weight: 90;
+
+        text-decoration: none;
+        padding: 12px 20px;
+      }
+      .navbar li a:hover,
+      .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(239, 23, 23);
+        border-radius: 25px;
+        background-color: rgb(231, 236, 231);
+      }
+
+      .left {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 5px;
+      }
+      .left img {
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        background-color: brown;
+        border-radius: 55px;
+        border: 5px solid white;
+        position: relative; /*for set posision of the logo*/
+        left: 57px;
+        box-shadow: 7px 3px 20px rgb(230, 81, 81);
+      }
+      .left div {
+        text-align: center;
+        padding: 9px;
+        font-weight: bold;
+        font-size: 150%;
+        line-height: 0px;
+        text-shadow: 1.15px 1.15px rgb(237, 227, 227);
+      }
+      .mid {
+        display: block;
+        width: 46%;
+        margin: 20px auto;
+        /* border: 2px solid rgb(255, 0, 0); */
+        /* border-radius: 25px; */
+      }
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 5px;
+
+        /* border: 2px solid rgb(87, 9, 254); */
+      }
+      .btn {
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px;
+        margin: 17px;
+        color: rgb(38, 0, 255);
+        border-radius: 20px;
+        border: 1px solid red;
+        background-color: rgb(0, 255, 255);
+        cursor: pointer;
+      }
+      .btn:hover {
+        color: rgb(239, 23, 23);
+        background-color: black;
+
+        /* border: 1px; */
+      }
+      .container {
+        color: rgb(30, 0, 255);
+        text-align: center; /*FOR CENTER THE ELEMENTS*/
+
+        border: 5px solid rgb(255, 255, 255);
+        margin: 100px 330px;
+        padding: 75px;
+        width: 50%;
+        border-radius: 35px;
+        padding: 50px;
+      }
+      .form-group input {
+        text-align: center;
+        display: block;
+        width: 80%;
+        padding: 1px;
+        border: 2px solid green;
+        font-size: 25px;
+        margin: 15px 52px;
+        border-radius: 8px;
+      }
+      .container button {
+        font-size: 160%;
+        font-weight: bold;
+        padding: 10px;
+        width: 25%;
+        margin: 25px 60px;
+        color: rgb(255, 0, 0);
+        border-radius: 20px;
+        border: 1px solid rgb(0, 255, 225);
+        background-color: rgb(47, 213, 207);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left part for the logo -->
+      <div class="left">
+        <img src="1_GYM_PROJECT_IMG/logo (1).png" alt="🤔" />
+        <div>AKSHAR</div>
+        <div>GYMNASTICS</div>
+      </div>
+      <!-- mid box for the navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" target="_blank">HOME</a></li>
+          <li><a href="#">FEACHURS</a></li>
+          <li><a href="#">FITNESS MEATER</a></li>
+          <li><a href="#">TIME TABLE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <!-- right box for the buttons -->
+      <div class="right">
+        i am
+        <button class="btn">SIGN IN</button>
+        <button class="btn">SIGN UP</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>WELCOME TO THE BEST GYM OF AHAMEDABAD</h1>
+      <form action="navigation.php">
+        <div class="form-group">
+          <input type="text" placeholder="ENTER YOUR NAME" />
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="ENTER YOUR AGE" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="ENTER YOUR GENDER" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="ENTER YOUR LOCALITY" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="ENTER YOUR PHONE NO" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="ENTER YOUR EMAIL" />
+        </div>
+        <button type="submit" class="btn">SUBMIT</button>
+        <button type="reset" class="btn">RESET</button>
+      </form>
+    </div>
+  </body>
+</html>
